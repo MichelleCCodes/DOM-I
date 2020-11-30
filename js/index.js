@@ -16,15 +16,21 @@ const siteContent = {
   "main-content": {
     "features-h4":"Features",
     "features-content": "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
+
     "about-h4":"About",
     "about-content": "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
+
     "middle-img-src": "img/mid-page-accent.jpg",
+
     "services-h4":"Services",
     "services-content": "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
+
     "product-h4":"Product",
     "product-content": "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
+
     "vision-h4":"Vision",
     "vision-content": "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
+
   },
   "contact": {
     "contact-h4" : "Contact",
@@ -50,9 +56,7 @@ const ctaImage = document.querySelector("#cta-img");
 
 // main content selectors 
 const mainContent = document.querySelector(".main-content"); 
-const topContent = document.querySelector(".top-content"); 
 const midImage = document.querySelector("#middle-img"); 
-const bottomContent = document.querySelector(".bottom-content");
 
 //contact selectors 
 const contact = document.querySelector(".contact"); 
@@ -61,6 +65,8 @@ const contact = document.querySelector(".contact");
 const footer = document.querySelector("footer");
 
 // Updating HTML with JSON data 
+
+// nav section 
 navLinks[0].textContent = "Services";
 navLinks[1].textContent = "Product"; 
 navLinks[2].textContent = "Vision";
@@ -75,6 +81,7 @@ navLinks[5].textContent = "Contact";
 //   count++;
 // });
 
+// CTA section
 document.querySelector("h1").innerHTML="DOM<br> Is<br> Awesome";
 document.querySelector("button").innerHTML="Get Started"; 
 
@@ -82,3 +89,12 @@ ctaImage.src = 'img/header-img.png';
 ctaImage.setAttribute('alt', 'Another image of a code snippet');
 
 // main content section 
+console.log(mainContent);
+const topContent = mainContent.querySelector(".top-content"); 
+
+const firstTextContent = topContent.querySelector(".text-content:nth-of-type(1)")
+const
+
+const secondTextContent = topContent.querySelector(".text-content:nth-of-type(2)")
+
+const bottomContent = document.querySelector(".bottom-content");
