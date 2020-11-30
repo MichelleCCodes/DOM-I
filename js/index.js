@@ -44,6 +44,8 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 // header selectors 
 const header = document.querySelector("header"); 
 const navLinks = document.querySelectorAll ("nav a"); 
+const cta = document.querySelector(".cta");
+const ctaHeader = cta.querySelector("h1");
 const ctaImage = document.querySelector("#cta-img"); 
 
 // main content selectors 
@@ -66,4 +68,17 @@ navLinks[3].textContent = "Features";
 navLinks[4].textContent = "About";
 navLinks[5].textContent = "Contact";
 
+// const navLinks = document.querySelectorAll('nav a');
+// let count = 1
+// navLinks.forEach(element => {
+//   element.textContent = siteContent.nav[`nav-item-${count.toString()}`];
+//   count++;
+// });
 
+document.querySelector("h1").innerHTML="DOM<br> Is<br> Awesome";
+document.querySelector("button").innerHTML="Get Started"; 
+
+ctaImage.src = 'img/header-img.png'; 
+ctaImage.setAttribute('alt', 'Another image of a code snippet');
+
+// main content section 
