@@ -41,3 +41,29 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+// header selectors 
+const header = document.querySelector("header"); 
+const navLinks = document.querySelectorAll ("nav a"); 
+const ctaImage = document.querySelector("#cta-img"); 
+
+// main content selectors 
+const mainContent = document.querySelector(".main-content"); 
+const topContent = document.querySelector(".top-content"); 
+const midImage = document.querySelector("#middle-img"); 
+const bottomContent = document.querySelector(".bottom-content");
+
+//contact selectors 
+const contact = document.querySelector(".contact"); 
+
+//footer selectors 
+const footer = document.querySelector("footer");
+
+// Updating HTML with JSON data 
+navLinks[0].textContent = "Services";
+navLinks[1].textContent = "Product"; 
+navLinks[2].textContent = "Vision";
+navLinks[3].textContent = "Features";
+navLinks[4].textContent = "About";
+navLinks[5].textContent = "Contact";
+
+
