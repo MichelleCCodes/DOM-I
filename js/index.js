@@ -91,6 +91,7 @@ ctaImage.setAttribute('alt', 'Another image of a code snippet');
 // main content section 
 console.log(mainContent);
 const topContent = mainContent.querySelector(".top-content"); 
+const bottomContent = mainContent.querySelector(".bottom-content"); 
 
 // top content section 
 const firstTextContent = topContent.querySelector(".text-content:nth-of-type(1)")
@@ -106,5 +107,38 @@ const aboutContent = secondTextContent.querySelector("p");
 aboutContent.textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
 // middle image section
+midImage.src = "img/mid-page-accent.jpg"; 
 
-const bottomContent = document.querySelector(".bottom-content");
+//bottom content section 
+const firstBottomText = bottomContent.querySelector(".text-content:nth-of-type(1)")
+const servicesHeader = firstBottomText.querySelector("h4")
+servicesHeader.textContent = "Services"
+const servicesContent = firstBottomText.querySelector("p"); 
+servicesContent.textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+const secondBottomText = bottomContent.querySelector(".text-content:nth-of-type(2)")
+const productHeader = secondBottomText.querySelector("h4")
+productHeader.textContent = "Product"
+const productContent = secondBottomText.querySelector("p"); 
+productContent.textContent = "Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+const thirdBottomText = bottomContent.querySelector(".text-content:nth-of-type(3)")
+const visionHeader = thirdBottomText.querySelector("h4")
+visionHeader.textContent = "Vision"
+const visionContent = thirdBottomText.querySelector("p"); 
+visionContent.textContent = "Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis."
+
+// contact section 
+const contactHeader = contact.querySelector("h4"); 
+contactHeader.textContent = "Contact"; 
+const firstPara = contact.querySelector("p:nth-of-type(1)")
+firstPara.innerHTML = "123 Way 456 Street" + "<br/>" + "Somewhere,USA"
+const midPara = contact.querySelector("p:nth-of-type(2)")
+midPara.textContent = "1 (888) 888-8888"
+const lastPara = contact.querySelector("p:nth-of-type(3)")
+lastPara.textContent = "sales@greatidea.io"
+
+// footer section 
+const footerText = footer.querySelector("p"); 
+footerText.textContent = "Copyright Great Idea! 2018"
+
