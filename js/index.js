@@ -92,9 +92,19 @@ ctaImage.setAttribute('alt', 'Another image of a code snippet');
 console.log(mainContent);
 const topContent = mainContent.querySelector(".top-content"); 
 
+// top content section 
 const firstTextContent = topContent.querySelector(".text-content:nth-of-type(1)")
-const
+const featuresHeader = firstTextContent.querySelector("h4");
+featuresHeader.textContent = "Features";
+const featuresContent = firstTextContent.querySelector("p");
+featuresContent.textContent = "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 
 const secondTextContent = topContent.querySelector(".text-content:nth-of-type(2)")
+const aboutHeader = secondTextContent.querySelector("h4");
+aboutHeader.textContent = "About";
+const aboutContent = secondTextContent.querySelector("p");
+aboutContent.textContent = "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+// middle image section
 
 const bottomContent = document.querySelector(".bottom-content");
